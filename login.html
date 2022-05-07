@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="work/css" href="login.css">
+    <title>LOGIN</title>
+    <style>
+        .banner{
+            background-image: url(istockphoto-949190736-170667a.jpg);
+            width: 100%;
+            height: 1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .banner .loginbox{
+    width: 320px;
+    height: 480px;
+    background: #000; 
+    /* background: transparent;
+    box-shadow: -2px 2px 70px 20px rgb(2, 1, 1);
+ background: rgba(0,0,0,0.4); */
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+.banner .loginbox .avatar{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+
+}
+.banner .loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.banner .loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.banner .loginbox input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.banner .loginbox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.banner .loginbox input[type="button"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:rgb(28, 175, 233);
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.banner .loginbox input[type="reset"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:rgb(28, 175, 233);
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.banner .loginbox input[type="button"]:hover{
+    cursor: pointer;
+    background: rgb(27, 207, 245);
+    color: #000;
+}
+.banner .loginbox input[type="reset"]:hover{
+    cursor: pointer;
+    background: rgb(127, 207, 245);
+    color: #000;
+}
+.banner .loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:grey;
+
+}
+
+.banner .loginbox a:hover{
+    color:#12a2f5 ;
+}
+
+    </style>
+</head>
+<script>
+   
+    
+//    var username = ("enter user name ");
+//         var password =("enter password");
+// var username = document.getElementById("username")
+// var password = document.getElementById("password")
+
+// function Navigation();
+//       {
+//         if(username  == "admin" && password =="abc@123");
+//         {
+//             alert("login successfull");
+//         }      
+//         else if (username  == "abc" && password =="abc@123");
+//             alert("invalid username")
+//         }
+//         else {
+//             alert("dont come")
+//         }
+//     }
+
+</script>
+<body>
+ <section class="banner">
+    <div class="loginbox">
+        <img src="download.jfif" class="avatar">
+        <h1>Login Here</h1>
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+            </form>
+            <script>
+            function check(form)
+            {
+           
+             if(form.userid.value == "Dawood" && form.pswrd.value == "12345")
+              {
+                window.open('target.html')
+              }
+             else
+             {
+               alert("Error Password or Username")
+              }
+            }
+            </script>
+         <form>
+            <!-- <p>User Name</p>
+  <input type="text" name="" placeholder="Enter Username" required="required" id="username">
+   <p>Password</p>
+    <input type="password" name="" placeholder="Enter Password"  required="required" id="password">
+    <button onclick="Navigation()">Login Here</button>
+    <br> -->
+
+     <!-- <input type="submit" name="" value="login" required="required"> -->
+      <a href="https://www.lostmypass.com/">Lost Your Password?</a><br>
+     <a href="https://www.drupal.org/project/social/issues/2997596">Don't Have An Account?</a>
+            
+
+
+            
+
+        </form>
+        
+    </div>
+
+ </section>
+
+    
+    
+</body>
+</html>
